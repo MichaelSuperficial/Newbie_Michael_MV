@@ -1,0 +1,7 @@
+reagent_name = input("Название реактива: ")
+quantity = input("Количество: ")
+reagent_name_corr = reagent_name.strip()
+quantity_corr = quantity.strip()
+file = open("inventory.txt", "w", encoding='utf-8')
+file.write(f"Реактив {reagent_name_corr} поступил на склад в количестве {quantity_corr} штук.")
+file.close ()
